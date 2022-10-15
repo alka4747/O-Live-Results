@@ -4,6 +4,10 @@ from flask import Flask, render_template, jsonify, request
 
 app = Flask(__name__)
 
+@app.route("/")
+def home():
+    return render_template("index.html")
+
 @app.route("/<club_name>")
 def club_results_home(club_name):
     return render_template("club_results_home.html", club_name=club_name)

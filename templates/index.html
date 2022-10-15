@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O-Live Results</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+body {
+  background: #2D3142;
+  font-family: 'Raleway', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+}
+
+/* Button Styles */
+
+.button {
+    display: inline-flex;
+    height: 40px;
+    width: 150px;
+    border: 2px solid #BFC0C0;
+    margin: 20px 20px 20px 20px;
+    color: #BFC0C0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  a {
+    color: #BFC0C0;
+    text-decoration: none;
+    letter-spacing: 1px;
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Button */
+  
+  #button-2 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #button-2 a {
+    position: relative;
+    transition: all .35s ease-Out;
+  }
+  
+  #slide {
+    width: 100%;
+    height: 100%;
+    left: -200px;
+    background: #BFC0C0;
+    position: absolute;
+    transition: all .35s ease-Out;
+    bottom: 0;
+  }
+  
+  #button-2:hover #slide {
+    left: 0;
+  }
+  
+  #button-2:hover a {
+    color: #2D3142;
+  }
+
+/* Layout Styling */
+h1 {
+    color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.clubsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 2;
+    width: 100%;
+}
+
+.appFilesContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+}
+
+.clubResultsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: white;
+    border-width: 1px;
+    border-style: solid;
+    padding-top: 1vh;
+}
+
+.apkFilesContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    width: 100%;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1>O-Live Results</h1>
+        
+        <div class="clubsContainer">
+            <div class="clubResultsContainer">
+                <img src="../static/ISOA/logo.jpg" height="100px" width="100px"/>
+                <div class="button" id="button-2">
+                    <div id="slide"></div>
+                    <a href="/ISOA">RESULTS HOME</a>
+                </div>
+            </div>
+            <div class="clubResultsContainer">
+                <img src="../static/ASA_Jerusalem/logo.jpg" height="100px" width="100px"/>
+                <div class="button" id="button-2">
+                    <div id="slide"></div>
+                    <a href="/ASA_Jerusalem">RESULTS HOME</a>
+                </div>
+            </div>
+            <div class="clubResultsContainer">
+                <img src="../static/ASA_Technion/logo.jpg" height="100px" width="100px"/>
+                <div class="button" id="button-2">
+                    <div id="slide"></div>
+                    <a href="/ASA_Technion">RESULTS HOME</a>
+                </div>
+            </div>
+            <div class="clubResultsContainer">
+                <img src="../static/ASA_Tel_Aviv/logo.jpg" height="100px" width="100px"/>
+                <div class="button" id="button-2">
+                    <div id="slide"></div>
+                    <a href="/ASA_Tel_Aviv">RESULTS HOME</a>
+                </div>
+            </div>
+            <div class="clubResultsContainer">
+                <img src="../static/Emeq_Hefer/logo.jpg" height="100px" width="100px"/>
+                <div class="button" id="button-2">
+                    <div id="slide"></div>
+                    <a href="/Emeq_Hefer">RESULTS HOME</a>
+                </div>
+            </div>
+            <div class="clubResultsContainer">
+                <img src="../static/Galilee/logo.jpg" height="100px" width="100px"/>
+                <div class="button" id="button-2">
+                    <div id="slide"></div>
+                    <a href="/Galilee">RESULTS HOME</a>
+                </div>
+            </div>
+            <div class="clubResultsContainer">
+                <img src="../static/Hasharon/logo.jpg" height="100px" width="100px"/>
+                <div class="button" id="button-2">
+                    <div id="slide"></div>
+                    <a href="/Hasharon">RESULTS HOME</a>
+                </div>
+            </div>
+            <div class="clubResultsContainer">
+                <img src="../static/Hevel_Modiin/logo.jpg" height="100px" width="100px"/>
+                <div class="button" id="button-2">
+                    <div id="slide"></div>
+                    <a href="/Hevel_Modiin">RESULTS HOME</a>
+                </div>
+            </div>
+            <div class="clubResultsContainer">
+                <img src="../static/Lev_Hasharon_Menashe/logo.jpg" height="100px" width="100px"/>
+                <div class="button" id="button-2">
+                    <div id="slide"></div>
+                    <a href="/Lev_Hasharon_Menashe">RESULTS HOME</a>
+                </div>
+            </div>
+            <div class="clubResultsContainer">
+                <img src="../static/Rishon_Letsiyon/logo.jpg" height="100px" width="100px"/>
+                <div class="button" id="button-2">
+                    <div id="slide"></div>
+                    <a href="/Rishon_Letsiyon">RESULTS HOME</a>
+                </div>
+            </div>
+            <div class="clubResultsContainer">
+                <img src="../static/Technion_Carmel/logo.jpg" height="100px" width="100px"/>
+                <div class="button" id="button-2">
+                    <div id="slide"></div>
+                    <a href="/Technion_Carmel">RESULTS HOME</a>
+                </div>
+            </div>
+            <div class="clubResultsContainer">
+                <img src="../static/Yizrael/logo.jpg" height="100px" width="100px"/>
+                <div class="button" id="button-2">
+                    <div id="slide"></div>
+                    <a href="/Yizrael">RESULTS HOME</a>
+                </div>
+            </div>
+        </div>
+        <div class="appFilesContainer">
+            <h1>Download O-Live-Client Android App</h1>
+            <div class="apkFilesContainer">
+
+                <div class="clubResultsContainer">
+                    <img src="../static/o-live-client/link.png" height="100px" width="100px"/>
+                    <div class="button" id="button-2">
+                        <div id="slide"></div>
+                        <a href="../static/o-live-client/app-arm64-v8a-release.apk">LINK</a>
+                    </div>
+                </div>
+                <!-- <div class="clubResultsContainer">
+                    <img src="../static/o-live-client/link.png" height="100px" width="100px"/>
+                    <div class="button" id="button-2">
+                        <div id="slide"></div>
+                        <a href="../static/o-live-client/app-armeabi-v7a-release.apk">ARMEABI-V7</a>
+                    </div>
+                </div>
+                <div class="clubResultsContainer">
+                    <img src="../static/o-live-client/link.png" height="100px" width="100px"/>
+                    <div class="button" id="button-2">
+                        <div id="slide"></div>
+                        <a href="../static/o-live-client/app-x86_64-release.apk">X86_64</a>
+                    </div>
+                </div> -->
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
